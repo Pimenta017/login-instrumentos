@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h2>Criar Conta</h2>
+<fieldset>
+    <legend>Introduza os seus dados</legend>
+    <form method="post">
+        <h4>Instrumentos</h4>
+        <input type='text' name="inst">
+        <h4>Tipo</h4>
+        <input type='text' name='tipo'>
+        <p><br></p>
+        <input type='submit' value="Submeter">
+    </form>
+</fieldset>
+{% if erro %}<h1>{{ erro }}</h1>{% endif %}
+{% endblock %}
